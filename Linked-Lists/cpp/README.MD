@@ -23,11 +23,5 @@
 If you have proposal of changing please do not hesitate to create pull request.
 
 
-----------
-
-
-----------
-
-
 @ Carmen Mitru
 
