@@ -1,40 +1,25 @@
 import java.util.*;
 /*
-Queue is an interface so we can instantiate so  you'll have to instantiate one of its implementing classes: 
-1) as Linked List
-2) as Priority Queue 
-- add(element)
-- peek() - returns the element (does not remove it)
-- remove() - remove and returns the head of the queue
+push(Object v) - adds an element to th stack
+pop() - removes and return the top element of the stack
+peek() - return the top element of the stack
+isEmpty() - check if stack is empty
+
 */
 class Solution {
 	public static void main(String[] args) {
-		// create queue that will contain Integer elements
-		Queue<Integer> q = new LinkedList<Integer>();
-		 
-		// Adds elements {1, 2, 3, 4} to queue
-		for (int i=1; i<=4; i++){
-			q.add(i);
+		Stack<Integer> st = new Stack<Integer>(); // stack will contain elements of type Integer
+		for(int i = 0; i<=4; i++){
+			st.push(i);// push  0 1 2 3 4 in the stack
 		}
-		 	
-		// Display content of the queue.
-		System.out.println("Elements of queue " + q);
-	 
-		// To remove the head of queue.
-		int removedEl = q.remove();
-		System.out.println("Head element that was removed" + removedEl);
-	 	
-		// Queue after the head removal
-		System.out.println(q);
-	 
-		// To view the head of queue
-		int head = q.peek();
-		System.out.println("Head of queue " + head);
-	 
-		System.out.println(q);
+		System.out.println(st);// display the stack
+		System.out.println("Is stack empty " + st.isEmpty());
 		
-		//Size of the queue
-		int size = q.size();
-		System.out.println("Size of queue " + size);			
+		int top = st.peek();// return the top element of the stack 
+		System.out.println("Top of the stack is " + top);
+		
+		
+		st.pop();//pop top element of the stack without removing it
+		System.out.println(st);
 	}
 }
