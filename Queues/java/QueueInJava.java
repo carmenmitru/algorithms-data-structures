@@ -1,6 +1,6 @@
 import java.util.*;
 /*
-Queue is an interface so we can instantiate so  you'll have to instantiate one of its implementing classes: 
+Queue is an interface so you can't instantiate so  you'll have to instantiate one of its implementing classes: 
 1) as Linked List
 2) as Priority Queue 
 - add(element)
